@@ -3,7 +3,7 @@ public class Grading{
         boolean validated = validateScore(score);
         if(!validated){
             System.out.println("Invalid Score");
-            break;
+            return;
         } else {
             char grade = calculateLetterGrade(score);
             System.out.println(displayPerformanceMessage(grade));
